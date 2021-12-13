@@ -171,7 +171,7 @@
       for (var i = 0; i < movements.length; i++) {
         movements_registered.push({x: new Date(movements[i].createdAt), y:1})
       }
-      let last_movements_registered = sounds_registered.slice(sounds_registered.length-15, sounds_registered.length)
+      let last_movements_registered = sounds_registered.slice(sounds_registered.length-3, sounds_registered.length)
     // Create the movement graph
     const ctx = document.getElementById('myChart').getContext('2d');
     const movChart = new Chart(document.getElementById('movChart'), {
