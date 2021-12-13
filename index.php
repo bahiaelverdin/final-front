@@ -122,7 +122,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <!-- Creating the sound level graph  -->
   <script>
-    const url_sounds = "https://final-ed2.herokuapp.com/sounds"
+    const url_sounds = "https://final-ed2-bahia.herokuapp.com/sounds"
     const responsePromise = axios.get(url_sounds);
     responsePromise.then((response)=>{
       const sounds = response.data.sounds
@@ -161,7 +161,7 @@
 
   <!-- Creating the movement graph  -->
   <script>
-    const url_movement = "https://final-ed2.herokuapp.com/motion"
+    const url_movement = "https://final-ed2-bahia.herokuapp.com/motion"
     const mov_promise = axios.get(url_movement);
     // Generate the data for the sound value graph
     mov_promise.then((response)=>{
@@ -211,7 +211,7 @@
 
   <!-- Creating the alarm table  -->
   <script>
-    const url = "https://final-ed2.herokuapp.com/alarms"
+    const url = "https://final-ed2-bahia.herokuapp.com/alarms"
     const alarmPromise = axios.get(url);
     // Get the alarm data
     alarmPromise.then((response)=>{
@@ -236,7 +236,7 @@
 
     // Change in the data base the alarm status to 'solved'
     let solveAlarm = function(id){
-      const update_url = "https://final-ed2.herokuapp.com/update-alarms"
+      const update_url = "https://final-ed2-bahia.herokuapp.com/update-alarms"
       const reportPromise = axios.get(update_url, {params:{alarm_id: id, solved:true}});
       document.getElementById('boton'+id).innerHTML = 'Solved'
     }
@@ -324,7 +324,7 @@
     e.preventDefault();
     endValue = new Date(endDate.value);
     startValue = new Date(startDate.value);
-    const report_url = "https://final-ed2.herokuapp.com/report"
+    const report_url = "https://final-ed2-bahia.herokuapp.com/report"
     const reportPromise = axios.get(report_url, {params:{start: startValue, end:endValue}});
     reportPromise.then((response)=>{
       const reports = response.data.reports
