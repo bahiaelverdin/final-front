@@ -282,7 +282,7 @@
         <th>Status</th>
       </tr>
     </table>
-    <p>Table showing the alarms registered after a sound level above 10.Once the reason for the sound has been found,
+    <p>Table showing the alarms registered after a sound level above 5.Once the reason for the sound has been found,
       <br> the user can mark the event as 'solved' in order to keep a record of all unsolved events separate.</p>
 
     <!-- Reports with from-to buttons -->
