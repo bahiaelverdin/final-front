@@ -248,7 +248,7 @@
     <!-- First 4 buttons to jump to different parts of the web page-->
     <div>
       <a href="#sound_link"><button class= "first_line_button"><img src="https://www.pngall.com/wp-content/uploads/8/Vector-Sound-PNG-Image-File.png" width="100"/><br>Sound Level </button></a>
-      <a href="#motion_link"><button class= "first_line_button"><img src="https://i.dlpng.com/static/png/4629223-motion-icon-with-png-and-vector-format-for-free-unlimited-download-png-motion-512_512_preview.png" width="100"/><br>Movement Detection </button></a>
+      <a href="#motion_link"><button class= "first_line_button"><img src="https://icon-library.com/images/man-running-icon/man-running-icon-28.jpg" width="100"/><br>Movement Detection </button></a>
     </div>
     <div style="height: 190px">
       <a href="#alarm_link"><button style="padding-top: 25px" class= "first_line_button"><img src="http://cdn.onlinewebfonts.com/svg/img_129610.png" width="100"/><br>Alarms</button></a>
