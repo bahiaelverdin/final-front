@@ -236,7 +236,7 @@
 
     // Change in the data base the alarm status to 'solved'
     let solveAlarm = function(id){
-      const update_url = "http://localhost:3000/update-alarms"
+      const update_url = "https://final-ed2.herokuapp.com/update-alarms"
       const reportPromise = axios.get(update_url, {params:{alarm_id: id, solved:true}});
       document.getElementById('boton'+id).innerHTML = 'Solved'
     }
