@@ -131,13 +131,14 @@
       for (var i = 0; i < sounds.length; i++) {
         sounds_registered.push({x: new Date(sounds[i].createdAt), y:sounds[i].sound_value})
       }
+      let last_sounds_registered = sounds_registered.slice(sounds_registered.length-15, sounds_registered.length)
       const ctx = document.getElementById('myChart').getContext('2d');
       const myChart = new Chart(ctx, {
           type: 'line',
           data: {
               datasets: [{
                   label: 'Sound level',
-                  data: sounds_registered,
+                  data: last_sounds_registered,
                   backgroundColor:"rgb(0, 51, 204 )" ,
                   borderColor: "rgb(0, 51, 204 )",
                   borderWidth: 1
