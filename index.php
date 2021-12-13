@@ -261,7 +261,7 @@
       <canvas id="myChart"></canvas>
     </div>
     <p>Graph plotting the sound level. The sound level was registered by an arduino sound sensor that has a sensitivity of 48-66 dB.
-      <br>The background noise has a value of '0'. Any sound value above 10 will generate and alarm. </P>
+      <br>The background noise has a value below 5. Any sound value above 10 will generate and alarm. </P>
 
     <!-- Motion graph -->
     <h3><a id="motion_link">Movement detection</a> </h3>
